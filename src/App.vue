@@ -17,17 +17,18 @@
     Total : {{sum}} <br>
     Discount : {{dis}} <br>
     xxx : {{sum - dis}}
-
+    <!-- <chart :name="name"></chart> -->
+    <!-- Text : <input type="number" v-model="name"> -->
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+// import Chart from './components/chart'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    // Chart
   },
   methods: {
     book (id, name, price) {
@@ -87,6 +88,7 @@ export default {
       data: [],
       sum: 0,
       dis: 0
+      // name: 0
     }
   }
 }
